@@ -1,1 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAJENOR EKSPEDISI</title>
 
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">MAJENOR EKSPEDISI</div>
+  <div class="menu-btn" onclick="toggleMenu()">☰</div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="Home">
+  <div class="hero-overlay"></div>
+  <div class="hero-content" data-aos="fade-up">
+    <h1>
+      Jasa Pengiriman Barang<br>
+      <span>Jakarta – Surabaya – NTT</span>
+    </h1>
+    <div class="hero-btn">
+      <a href="#" class="btn-primary">Cek Tarif</a>
+      <a href="#" class="btn-secondary">Pesan Sekarang</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROMO -->
+<section class="promo">
+  <h2 data-aos="fade-up">Promo & Penawaran Spesial</h2>
+  <div class="promo-container">
+    <div class="promo-card" data-aos="fade-up">
+      <h3>Diskon Pengiriman Barang</h3>
+      <p>Potongan harga hingga <strong>20%</strong> rute Jakarta – Surabaya.</p>
+    </div>
+    <div class="promo-card" data-aos="fade-up" data-aos-delay="100">
+      <h3>Promo Kirim Motor</h3>
+      <p>Gratis asuransi untuk motor baru.</p>
+    </div>
+    <div class="promo-card" data-aos="fade-up" data-aos-delay="200">
+      <h3>Layanan Pindahan</h3>
+      <p>Harga spesial pindahan rumah & kantor.</p>
+    </div>
+  </div>
+</section>
+
+<!-- LAYANAN ANTAR JEMPUT -->
+<section class="layanan-antar">
+  <h2 data-aos="fade-up">Layanan Antar Jemput</h2>
+  <p class="layanan-subtitle" data-aos="fade-up" data-aos-delay="100">
+    Alur Pengiriman Barang MAJENOR EKSPEDISI
+  </p>
+
+  <div class="alur-container" data-aos="fade-up" data-aos-delay="200">
+
+    <div class="alur-step">
+      <div class="alur-icon bg-blue">
+        <img src="img/jemput.png" alt="Jemput Barang">
+      </div>
+      <p>Jemput Barang<br>dari Pelanggan</p>
+    </div>
+
+    <div class="alur-arrow">➜</div>
+
+    <div class="alur-step">
+      <div class="alur-icon bg-orange">
+        <img src="img/packing.png" alt="Packing Gudang">
+      </div>
+      <p>Barang di Packing<br>di Gudang</p>
+    </div>
+
+    <div class="alur-arrow">➜</div>
+
+    <div class="alur-step">
+      <div class="alur-icon bg-green">
+        <img src="img/perjalanan.png" alt="Dalam Perjalanan">
+      </div>
+      <p>Barang Dalam<br>Perjalanan</p>
+    </div>
+
+    <div class="alur-arrow">➜</div>
+
+    <div class="alur-step">
+      <div class="alur-icon bg-purple">
+        <img src="img/antar.png" alt="Antar Tujuan">
+      </div>
+      <p>Barang Diantar<br>ke Tujuan</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- GALERI FOTO -->
+<section class="galeri">
+  <h2 data-aos="fade-up">Galeri Foto</h2>
+  <p class="galeri-subtitle" data-aos="fade-up" data-aos-delay="100">
+    Dokumentasi Pengiriman MAJENOR EKSPEDISI
+  </p>
+
+  <!-- BARANG ELEKTRONIK -->
+  <div class="galeri-group" data-aos="fade-up">
+    <h3>Barang Elektronik</h3>
+    <div class="galeri-foto">
+      <!-- FOTO NANTI KAMU TAMBAHKAN -->
+      <!-- <img src="img/elektronik1.jpg"> -->
+      <!-- <img src="img/elektronik2.jpg"> -->
+    </div>
+  </div>
+
+  <!-- BARANG PINDAHAN -->
+  <div class="galeri-group" data-aos="fade-up">
+    <h3>Barang Pindahan</h3>
+    <div class="galeri-foto">
+      <!-- FOTO PINDAHAN -->
+    </div>
+  </div>
+
+  <!-- BARANG BESAR -->
+  <div class="galeri-group" data-aos="fade-up">
+    <h3>Barang Besar</h3>
+    <div class="galeri-foto">
+      <!-- FOTO BARANG BESAR -->
+    </div>
+  </div>
+
+  <!-- MOTOR -->
+  <div class="galeri-group" data-aos="fade-up">
+    <h3>Motor</h3>
+    <div class="galeri-foto">
+      <!-- FOTO MOTOR -->
+    </div>
+  </div>
+</section>
+
+<!-- SIDEBAR -->
+<nav id="sidebar">
+  <a href="#Home">Home</a>
+
+  <div class="menu-item" onclick="toggleLayanan()">
+    <span>Layanan Kami</span>
+    <span class="arrow" id="arrow-layanan">▼</span>
+  </div>
+  <div id="submenu-layanan" class="submenu">
+    <a href="#">Jasa Pindahan</a>
+    <a href="#">Jasa Kirim Motor</a>
+    <a href="#">Jasa Kirim Barang</a>
+  </div>
+
+  <div class="menu-item" onclick="toggleTarif()">
+    <span>Tarif Pengiriman</span>
+    <span class="arrow" id="arrow-tarif">▼</span>
+  </div>
+  <div id="submenu-tarif" class="submenu">
+    <a href="#">Tarif Pindahan</a>
+    <a href="#">Tarif Kirim Motor</a>
+    <a href="#">Tarif Kirim Barang</a>
+  </div>
+
+  <a href="#">Tentang Kami</a>
+  <a href="#">Blog</a>
+  <a href="#">Kontak</a>
+  <a class="track" href="#">Lacak Pengiriman</a>
+</nav>
+
+<!-- ARTIKEL -->
+<main class="content">
+  <section class="article" data-aos="fade-up">
+    <img src="img/artikel.jpg" alt="Artikel">
+    <div class="article-text">
+      <span class="date">16 Des 2025</span>
+      <h2>Kirim Barang Dari JAKARTA SURABAYA NTT Jadi Lebih Mudah dengan Layanan Antar Jemput MAJENOR EKSPEDISI</h2>
+      <p class="article-desc">
+        Kini pengiriman barang dari Jakarta dan Surabaya ke NTT tidak lagi sulit.
+        MAJENOR EKSPEDISI menawarkan layanan antar jemput barang langsung dari ruma pengirim 
+        hingga di antar ke ruma penerima.
+      </p>
+
+      <p class="article-desc">
+        MAJENOR EKSPEDISI melayani pengiriman barang elektronik, barang pindahan, barang besar,
+        hingga pengiriman motor dengan proses yang aman dan profesional.
+      </p>
+
+      <p class="article-desc ">
+        Dengan jangkauan pengiriman yang luas dan layanan door to door, MAJENOR EKSPEDISI menjadi 
+        solusi terpercaya pengiriman barang lintas pulau.
+      </p>
+    </div>
+  </section>
+</main>
+
+<!-- WHATSAPP -->
+<a class="wa-btn" href="https://wa.me/628xxxxxxxxx" target="_blank">
+  Ada Yang Bisa Kami Bantu?
+</a>
+
+<!-- JS -->
+<script src="js/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+</script>
+
+</body>
+</html>
